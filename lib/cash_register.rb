@@ -28,7 +28,7 @@ attr_accessor :discount, :total, :price, :items, :quantity
     previous_total = @total.to_f
     hash = { title => price }
     @price = price
-    @last_transaction = self.price
+    @last_transaction << self.price
     @total = previous_total + (price * quantity)
     if add
       @total = @total + add
