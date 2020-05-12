@@ -31,7 +31,6 @@ attr_accessor :discount, :total, :price, :items, :quantity
     @price = price
     @last_transaction << self.price
     @total = previous_total + (price * quantity)
-    binding.pry
     if add
       @total = @total + add
     end
