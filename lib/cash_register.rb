@@ -60,5 +60,6 @@ end
 binding.pry
       @total == 0
     end
+    total
   end
 end
