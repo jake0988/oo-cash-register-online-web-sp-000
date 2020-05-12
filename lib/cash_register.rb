@@ -48,7 +48,7 @@ end
   def items
    @items
   end
-
+  value = @last_transaction[key]
   def void_last_transaction
     binding.pry
     @total = @total - @last_transaction.value
