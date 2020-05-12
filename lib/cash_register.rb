@@ -20,6 +20,7 @@ attr_accessor :discount, :total, :price, :items, :quantity
     @count << self
     @count = @count.count
     array = []
+    @quantity = quantity
     quantity.times do
     @items << title
     end
