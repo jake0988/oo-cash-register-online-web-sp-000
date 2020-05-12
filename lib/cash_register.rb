@@ -50,7 +50,7 @@ end
   end
   price = @last_transaction
   def void_last_transaction
-  
+  binding.pry
     @total = @total - price
     if @count < 2
       @total == 0
