@@ -25,7 +25,7 @@ attr_accessor :discount, :total, :price, :items
     end
     #binding.pry
     previous_total = @total.to_f
-    hash = quantity.times { title => price }
+    hash = { title => price }
 
     @last_transaction = hash
     @total = previous_total + (price * quantity)
