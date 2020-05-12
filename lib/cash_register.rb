@@ -56,7 +56,7 @@ end
     last_transaction = []
     while i < @quantity
       @last_transaction.each |e|
-      @last_transaction << e
+      last_transaction << e
     end
     item = @items.delete(@last_transaction)
     binding.pry
