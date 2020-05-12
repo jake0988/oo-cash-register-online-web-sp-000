@@ -48,10 +48,10 @@ end
   def items
    @items
   end
-  price = @last_transaction.key
+  price = @last_transaction
   def void_last_transaction
     binding.pry
-    @total = @total - @last_transaction
+    @total = @total - price
     if @count < 2
       @total == 0
     end
