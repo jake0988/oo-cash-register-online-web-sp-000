@@ -55,6 +55,7 @@ end
     while i < quantity
       @last_transaction.collect |e|
       @last_transaction << e
+    end
     item = @items.delete(@last_transaction)
     binding.pry
     if item.length == 0
