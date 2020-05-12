@@ -55,9 +55,9 @@ end
   def void_last_transaction
     @total = @total - @price
     i = 0
-    last_transaction = []
-    last = @last_transaction.delete(@last_transaction.last)
-    if last.length == 0
+    l = @items.last
+    @items.delete(l)
+    if @items.length == 0
     binding.pry
       @total == 0
     end
