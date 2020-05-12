@@ -56,13 +56,9 @@ end
     @total = @total - @price
     i = 0
     last_transaction = []
-    while i < @quantity
-      @last_transaction.each |e|
-      last_transaction << e
-    end
-    item = @items.delete(@last_transaction)
+    last = @last_transaction.delete(@last_transaction.last)
+    if last.length == 0
     binding.pry
-    if item.length == 0
       @total == 0
     end
   end
