@@ -51,7 +51,7 @@ end
   value = @last_transaction[key]
   def void_last_transaction
     binding.pry
-    @total = @total - @last_transaction.value
+    @total = @total - @last_transaction
     if @count < 2
       @total == 0
     end
