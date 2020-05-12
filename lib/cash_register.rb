@@ -53,7 +53,7 @@ end
   def void_last_transaction
     @total = @total - @price
     i = 0
-    last_transaction
+    last_transaction = []
     while i < @quantity
       @last_transaction.each |e|
       @last_transaction << e
