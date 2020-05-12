@@ -51,6 +51,10 @@ end
 
   def void_last_transaction
     @total = @total - @price
+    i < 0
+    while i < quantity
+      @last_transaction.collect |e|
+      @last_transaction << e
     item = @items.delete(@last_transaction)
     binding.pry
     if item.length == 0
