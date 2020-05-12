@@ -53,9 +53,9 @@ end
   def void_last_transaction
     @total = @total - @price
     i = 0
-
+    last_transaction
     while i < @quantity
-      @last_transaction.collect |e|
+      @last_transaction.each |e|
       @last_transaction << e
     end
     item = @items.delete(@last_transaction)
