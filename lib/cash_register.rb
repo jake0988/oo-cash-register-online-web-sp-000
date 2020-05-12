@@ -58,7 +58,6 @@ end
     @items.delete(l)
     if @items.length == 0
        @total = 0.0
-       binding.pry
     end
     @total
     # binding.pry
