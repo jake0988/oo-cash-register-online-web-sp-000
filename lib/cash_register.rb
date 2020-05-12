@@ -51,7 +51,7 @@ end
 
   def void_last_transaction
     @total = @total - @price
-    i < 0
+    i = 0
 
     while i < @quantity
       @last_transaction.collect |e|
