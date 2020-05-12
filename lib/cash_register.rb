@@ -51,6 +51,9 @@ end
 
   def void_last_transaction
     @total = @total - @price
-
+    item = @items.delete(last_transaction)
+    if item.length == 0
+      @tota == 0
+    end
   end
 end
